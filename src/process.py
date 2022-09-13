@@ -1,14 +1,20 @@
+# files management 
 import hydra
 from hydra import utils
 from omegaconf import DictConfig, OmegaConf
 import os
+
 import pandas as pd
+
+from logzero import logger
 
 @hydra.main(config_path="../config", config_name="main")
 def load_data(config: DictConfig) -> None:
     """Load data and build dataframes."""
 
     # Build dataframes
+    logger.info("Loading datasets")
+    
     current_path = utils.get_original_cwd()
 
     actual_set_path = os.path.join(current_path, config.raw_path.actual_set_path)
@@ -26,9 +32,11 @@ def load_data(config: DictConfig) -> None:
     user_metadata_path = os.path.join(current_path, config.raw_path.user_metadata_path)
     user_metadata_df = pd.read_csv(user_metadata_path)
 
+    logger.info("Loading datasets finished successfully!")
+    
 def join_data() -> None:
     """Join dataframes by User ID."""
     pass
 
 if __name__ == "__main__":
-    load_data()
+    load_data() 
