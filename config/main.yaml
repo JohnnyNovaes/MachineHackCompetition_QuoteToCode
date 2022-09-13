@@ -1,0 +1,7 @@
+raw_path:
+ actual_set_path: ../data/raw/actual_set.csv
+ app_installs_path: ../data/raw/app_installs.csv
+ app_usage_path: ../data/raw/app_usage.csv
+ app_metadata_path: ../data/raw/app_metadata.csv
+ user_metadata_path: ../data/raw/user_metadata.csv
+
