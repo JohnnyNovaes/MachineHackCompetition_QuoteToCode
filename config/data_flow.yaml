@@ -1,0 +1,26 @@
+raw_path:
+  actual_set: ../data/raw/actual_set.csv
+  app_installs: ../data/raw/app_installs.csv
+  app_usage: ../data/raw/app_usage.csv
+  app_metadata: ../data/raw/app_metadata.csv
+  user_metadata: ../data/raw/user_metadata.csv
+  validation_data: ../data/raw/validation_data.csv
+  sample_submission: ../data/raw/sample_submission.csv
+
+process_path:
+  actual_set: ../data/process/actual_set_process.csv
+  app_installs: ../data/process/app_installs_process.csv
+  app_usage: ../data/process/app_usage_process.csv
+  app_metadata: ../data/process/app_metadata_process.csv
+  user_metadata: ../data/process/user_metadata_process.csv
+  validation_data: ../data/process/validation_data_process.csv
+  sample_submission: ../data/process/sample_submission_process.csv
+
+final_path:
+  actual_set: ../data/process/actual_set_final.csv
+  app_installs: ../data/process/app_installs_final.csv
+  app_usage: ../data/process/app_usage_final.csv
+  app_metadata: ../data/process/app_metadata_final.csv
+  user_metadata: ../data/process/user_metadata_final.csv
+  validation_data: ../data/process/validation_data_final.csv
+  sample_submission: ../data/process/sample_submission_final.csv
